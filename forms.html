@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <h1><button class="botão-voltar"><a href="index.html">Portfólio</a>
+    </button>Formulário de contato</h1>
+    <form action="https://formsubmit.co/fragar774@gmail.com" method="post">
+        <form>
+            <table>
+                <caption>
+                    Cadastro Geral
+                </caption>
+
+                <tr>
+                    <th>Informações de usuário</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Nome Completo</td>
+                                <td><input type="text" name="nome" required/></td>
+                            </tr>
+
+                            <tr>
+                                <td>Data de Nascimento</td>
+                                <td><input type="date" name="nascimento" required/></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Gênero
+                                </td>
+                                <td><input type="radio" name="genero" value="masculino" required/>Masculino</td>
+                                <td><input type="radio" name="genero" value="feminino"/>Feminino</td>
+                                <td><input type="radio" name="genero" value="outro"/>Outro</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Informações de contato</th>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>E-mail</td>
+                                <td>
+                                    <input type="email" name="email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Telefone</td>
+                                <td>
+                                    <input type="tel" name="telefone" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+            <table>
+                <div class="al"><button type="submit">Enviar formulário</button></div>
+            </table>
+        </form>
+    </form>
+</body>
+</html>
