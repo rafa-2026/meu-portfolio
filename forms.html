@@ -1,62 +1,92 @@
 <!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de contato</title>
-    <link rel="stylesheet" href="forms.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+  <body>
     <h1>
-        <a href="index.html" class="botao-voltar">Portfólio</a>
-        Formulário de contato
+      <button class="botão-voltar"><a href="index.html">Portfólio</a></button
+      >Formulário de contato
     </h1>
-
     <form action="https://formsubmit.co/fragar774@gmail.com" method="post">
-
+      <form>
         <table>
-            <caption>Cadastro Geral</caption>
-            <tr>
-                <th colspan="2">Informações de usuário</th>
-            </tr>
-            <tr>
-                <td><label for="nome">Nome Completo</label></td>
-                <td><input type="text" id="nome" name="nome" required></td>
-            </tr>
-            <tr>
-                <td><label for="nascimento">Data de Nascimento</label></td>
-                <td><input type="date" id="nascimento" name="nascimento" required></td>
-            </tr>
-            <tr>
-                <td>Gênero</td>
-                <td>
-                    <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
-                    <label><input type="radio" name="genero" value="feminino"> Feminino</label>
-                    <label><input type="radio" name="genero" value="outro"> Outro</label>
-                </td>
-            </tr>
-        </table>
+          <caption>
+            Cadastro Geral
+          </caption>
 
+          <tr>
+            <th>Informações de usuário</th>
+          </tr>
+
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>Nome Completo</td>
+                  <td><input type="text" name="nome" required /></td>
+                </tr>
+
+                <tr>
+                  <td>Data de Nascimento</td>
+                  <td><input type="date" name="nascimento" required /></td>
+                </tr>
+
+                <tr>
+                  <td>Gênero</td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="genero"
+                      value="masculino"
+                      required
+                    />Masculino
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="genero"
+                      value="feminino"
+                    />Feminino
+                  </td>
+                  <td>
+                    <input type="radio" name="genero" value="outro" />Outro
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
         <table>
-            <tr>
-                <th colspan="2">Informações de contato</th>
-            </tr>
-            <tr>
-                <td><label for="email">E-mail</label></td>
-                <td><input type="email" id="email" name="email" required></td>
-            </tr>
-            <tr>
-                <td><label for="telefone">Telefone</label></td>
-                <td><input type="tel" id="telefone" name="telefone" required></td>
-            </tr>
+          <tr>
+            <th>Informações de contato</th>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>E-mail</td>
+                  <td>
+                    <input type="email" name="email" required />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Telefone</td>
+                  <td>
+                    <input type="tel" name="telefone" required />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
         </table>
-
-        <div class="al">
-            <button type="submit">Enviar formulário</button>
-        </div>
-
+        <table>
+          <div class="al"><button type="submit">Enviar formulário</button></div>
+        </table>
+      </form>
     </form>
-
-</body>
+  </body>
 </html>
