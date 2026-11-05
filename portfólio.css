@@ -32,13 +32,8 @@ article {
   margin-top: 10px;
   border-radius: 15px;
   display: flex;
-  transition: background-color 0.2s ease 0.5s;
   align-items: flex-start;
   box-shadow: 15px 15px 15px rgba(0, 0, 79, 0.407);
-  background-image: linear-gradient(to right, #25588b, #132760);
-  background-size: 0% 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.5s ease 0.5s;
   height: 120px;
 }
 article:hover {
